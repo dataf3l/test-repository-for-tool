@@ -1,0 +1,25 @@
+{
+  "name": "filesystem-viewer",
+  "version": "1.0.0",
+  "description": "A simple filesystem viewer that shows Git branch names for each folder",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^20.0.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.6",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "fs-viewer": "./dist/index.js"
+  }
+}
